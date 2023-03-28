@@ -138,7 +138,7 @@ class model_usuario
     }
     public function get_useremail()
     {
-        return $this->get_useremail();
+        return $this->useremail;
     }
     public function set_useremail($n)
     {

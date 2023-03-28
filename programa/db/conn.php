@@ -36,6 +36,7 @@ class conn
 
     public function escapar($str)
     {
+        $this->connect();
         return $this->link->real_escape_string($str);
     }
 

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once "libs/config_smarty.php";
 require_once "model/model.php";
 require_once "model/model_usuario.php";
@@ -40,7 +40,6 @@ class Control
             } else {
                 if (isset($_SESSION['USUARIO'])) {
                     $rs = unserialize($_SESSION['USUARIO']);
-
                     if ($rs->get_id_usuario() > 0) {
                         echo "Hola Entro al sistema";
                     } else {
@@ -63,10 +62,12 @@ class Control
 
         
         $rs = $this->objModel->m_Validar_Login($obj_u);
-
+        
         // Validar que el resultado de m_Validar_Login es un objeto de tipo model_usuario
-        if ($rs instanceof model_usuario && $rs->get_id_usuario() > 0) {
-
+        if ($rs->get_id_usuario() > 0) {
+            
+           //echo ($rs->get_id_usuario());
+           //exit;
             $_SESSION['USUARIO'] = serialize($rs);
             header("location:index.php");
         } else {

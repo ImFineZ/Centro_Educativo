@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-01 07:42:44
+/* Smarty version 4.3.0, created on 2023-04-01 07:44:07
   from 'C:\xampp\htdocs\CentroEducativo\programa\view\templates\frm_login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6427c4542140e7_85603663',
+  'unifunc' => 'content_6427c4a7780a83_61825604',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ee6cc7a61d065236bde380e7473953cf66b52071' => 
     array (
       0 => 'C:\\xampp\\htdocs\\CentroEducativo\\programa\\view\\templates\\frm_login.tpl',
-      1 => 1680327760,
+      1 => 1680327843,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6427c4542140e7_85603663 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6427c4a7780a83_61825604 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
-  <title>Tech Crew©</title>
+  <title>Centro Educativo</title>
   <link rel="icon" type="image/png" href="graphics/TC.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

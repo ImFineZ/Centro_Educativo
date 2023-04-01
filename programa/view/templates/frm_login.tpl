@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tech Crew©</title>
+  <title>Centro Educativo</title>
   <link rel="icon" type="image/png" href="graphics/TC.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

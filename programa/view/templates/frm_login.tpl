@@ -14,7 +14,7 @@
 <body>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <strong><p id="frase1" style="margin-left: 520px; width: 350px" class="maquina-escribir" style="width:650px; margin-left:450px">&gt;&nbsp;Contacto_</p></strong>
+  <strong><p id="frase1" style="margin-left: 520px; width: 380px" class="maquina-escribir" style="width:650px; margin-left:450px">Centro Educativo</p></strong>
   <div class="container">
     <form method="post" action="contact.php">
       <input type="hidden"  name="accion" value="ingresar_contacto">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,800&display=swap');
 
 body{
   background-color: #101728;
@@ -7,7 +7,7 @@ body{
 
 #frase1{
   text-align: left;
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', sans-serif;
   font-size: 40px;
   margin-top: 15px;
   margin-left: 300px;
@@ -76,11 +76,90 @@ input[type=submit]:hover {
 
 #btnEnvCon{
   text-align: center;
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', sans-serif;
   margin-top: 50px;
   margin-left: 177px;
-  height: 50px;
+  height: 56px;
   width: 150px;
   background-color: black;
   color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.3px;
+}
+
+#btnReg{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 20px;
+  margin-left:1177px;
+  height: 56px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.3px;
+}
+
+.modalReg{
+  position:fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8C8584bd;
+  display: flex;
+  font-family: 'Work Sans';
+  opacity: 0;
+  pointer-events:none;
+}
+
+.modalReg--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+}
+
+.modal_container{
+  margin: auto;
+  width: 75%;
+  max-width: 550px;
+  max-height: 97%;
+  font-family: 'Work Sans';
+  color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  background-color: #101728;
+  opacity: 90%;
+}
+
+#txt_reg{
+  width: 225px;
+  place-items: center;
+}
+
+#lb_reg{
+  margin-left: 70px;
+}
+
+#btnFmReg{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  margin-left: 93px;
+  height: 56px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.3px;
 }

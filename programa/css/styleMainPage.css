@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,800&display=swap');
+
+body{
+  background-color: #101728;
+  margin: 0;
+}
+
+#frase1{
+  text-align: left;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-left: 300px;
+  color: #3374A0;
+}
+
+/*CONTACT PAGE STYLES*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #101728;
+  padding: 20px;
+  width: 550px;
+  margin-left: 415px;
+  font-family: 'Work Sans';
+  font-size: 20px;
+  color: white;
+  opacity: 75%;
+}
+
+#btnEnvCon{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 50px;
+  margin-left: 177px;
+  height: 56px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.3px;
+}
+
+#btnReg{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 20px;
+  margin-left:1177px;
+  height: 56px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.3px;
+}
+
+.modalReg{
+  position:fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8C8584bd;
+  display: flex;
+  font-family: 'Work Sans';
+  opacity: 0;
+  pointer-events:none;
+}
+
+.modalReg--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+}
+
+.modal_container{
+  margin: auto;
+  width: 75%;
+  max-width: 550px;
+  max-height: 97%;
+  font-family: 'Work Sans';
+  color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  background-color: #101728;
+  opacity: 90%;
+}
+
+#txt_reg{
+  width: 225px;
+  place-items: center;
+}
+
+#lb_reg{
+  margin-left: 70px;
+}
+
+#btnFmReg{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 93px;
+  height: 56px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.3px;
+}

@@ -26,7 +26,7 @@
   </div>
   <section class="modalReg">
     <div class="modal_container">
-      <strong><p class="maquina-escribir" style="width:250px; margin-left:200px">Registrarse</p></strong>
+      <strong><p class="maquina-escribir" style="width:250px; margin-left:33px">Registrarse - Centro Educativo</p></strong>
       <form method="post" action="registrarse.php">
         <input type="hidden"  name="accion" value="ingresar_contacto">
         <strong><label id="lb_reg" for="nomTxt">Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>

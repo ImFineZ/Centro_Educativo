@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-07 08:27:56
+/* Smarty version 4.3.0, created on 2023-04-07 08:33:44
   from 'C:\xampp\htdocs\CentroEducativo\programa\view\templates\frm_login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_642fb7ec6e8b94_07818203',
+  'unifunc' => 'content_642fb9480ebb35_87645662',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ee6cc7a61d065236bde380e7473953cf66b52071' => 
     array (
       0 => 'C:\\xampp\\htdocs\\CentroEducativo\\programa\\view\\templates\\frm_login.tpl',
-      1 => 1680848756,
+      1 => 1680849222,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642fb7ec6e8b94_07818203 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642fb9480ebb35_87645662 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +49,7 @@ function content_642fb7ec6e8b94_07818203 (Smarty_Internal_Template $_smarty_tpl)
   </div>
   <section class="modalReg">
     <div class="modal_container">
-      <strong><p class="maquina-escribir" style="width:250px; margin-left:200px">Registrarse</p></strong>
+      <strong><p class="maquina-escribir" style="width:250px; margin-left:33px">Registrarse - Centro Educativo</p></strong>
       <form method="post" action="registrarse.php">
         <input type="hidden"  name="accion" value="ingresar_contacto">
         <strong><label id="lb_reg" for="nomTxt">Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>

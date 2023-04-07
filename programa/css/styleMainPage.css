@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200&display=swap');
+
+body{
+  background-color: #101728;
+  margin: 0;
+}
+
+#frase1{
+  text-align: left;
+  font-family: 'Tourney';
+  font-size: 40px;
+  margin-top: 15px;
+  margin-left: 300px;
+  color: #3374A0;
+}
+
+/*CONTACT PAGE STYLES*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #101728;
+  padding: 20px;
+  width: 550px;
+  margin-left: 415px;
+  font-family: 'Tourney';
+  font-size: 20px;
+  color: white;
+  opacity: 75%;
+}
+
+#btnEnvCon{
+  text-align: center;
+  font-family: 'Tourney';
+  margin-top: 50px;
+  margin-left: 177px;
+  height: 50px;
+  width: 150px;
+  background-color: black;
+  color: white;
+}

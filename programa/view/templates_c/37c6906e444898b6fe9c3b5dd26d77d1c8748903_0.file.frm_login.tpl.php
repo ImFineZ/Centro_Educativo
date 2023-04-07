@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 4.3.0, created on 2023-04-07 18:02:35
+  from 'C:\xampp\htdocs\Centro_Educativo\programa\view\templates\frm_login.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_64303e9b731c45_36821478',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '37c6906e444898b6fe9c3b5dd26d77d1c8748903' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Centro_Educativo\\programa\\view\\templates\\frm_login.tpl',
+      1 => 1680883273,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_64303e9b731c45_36821478 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html>
 <head>
   <title>Centro Educativo</title>
@@ -57,6 +80,10 @@
       </form>
     </div>
   </section>
-  <script src="js/main.js" type="text/javascript"></script>
+  <?php echo '<script'; ?>
+ src="js/main.js" type="text/javascript"><?php echo '</script'; ?>
+>
 </body>
 </html>
+<?php }
+}

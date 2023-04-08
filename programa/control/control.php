@@ -21,9 +21,21 @@ class Control
         $this->obj_smarty = new config_smarty();
     }
 
+    public function displayHeaderAdmin(){
+      $this->obj_smarty->setDisplay("headerAdmin.tpl");
+    }
+
+    public function displayHeaderUsuario(){
+      $this->obj_smarty->setDisplay("headerUsuario.tpl");
+    }
+
+    public function displayPantallaPrincipal(){
+      $this->obj_smarty->setDisplay("pantallaPrincipal.tpl");
+    }
+
     public function gestor_solicitudes()
     {
-        
+
         $this->validar_inactividad();
 
         try {
@@ -42,9 +54,11 @@ class Control
 
                     $rs = unserialize($_SESSION['USUARIO']);
 
-                    if ($rs->get_id_usuario() > 0) {
-                        echo "Hola Entro al sistema";
-                        $this->obj_smarty->setDisplay("header.tpl");
+                    if ($rs->get_id_usuario() == 2) {
+                        $this->displayHeaderAdmin();
+                        $this->displayPantallaPrincipal();
+                    } else if($rs->get_id_usuario() == 1){
+                        $this->displayHeaderUsuario();
                     } else {
                         $this->obj_smarty->setDisplay("frm_login.tpl");
                     }
@@ -57,11 +71,8 @@ class Control
         }
     }
 
-    public function ctl_salir()
-    {
-        unset($_REQUEST['accion']);
-        session_destroy(); // destroy la session
-        header("location:index.php");
+    public function ctl_salir() {
+      $this->obj_smarty->setDisplay("frm_login.tpl");
     }
 
     public function ctl_validar_login()
@@ -74,14 +85,11 @@ class Control
         $rs = $this->objModel->m_Validar_Login($obj_u);
 
         // Validar que el resultado de m_Validar_Login es un objeto de tipo model_usuario
-        if ($rs->get_id_usuario() > 0) {
-
-            //echo ($rs->get_id_usuario());
-            //exit;
+        if ($rs != null && $rs->get_id_usuario() > 0) {
             $_SESSION['USUARIO'] = serialize($rs);
             header("location:index.php");
         } else {
-            echo "Usuario o pass Invalido";
+            echo '<script>alert("Credenciales incorrectas!");</script>';
             $this->obj_smarty->setDisplay("frm_login.tpl");
         }
     }

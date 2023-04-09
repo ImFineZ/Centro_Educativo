@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-08 06:01:52
+/* Smarty version 4.3.0, created on 2023-04-09 06:43:02
   from 'C:\xampp\htdocs\Centro_Educativo\programa\view\templates\frm_login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6430e730752d79_53052796',
+  'unifunc' => 'content_643242560749a0_35109387',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '37c6906e444898b6fe9c3b5dd26d77d1c8748903' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Centro_Educativo\\programa\\view\\templates\\frm_login.tpl',
-      1 => 1680926511,
+      1 => 1681015379,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6430e730752d79_53052796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_643242560749a0_35109387 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@ function content_6430e730752d79_53052796 (Smarty_Internal_Template $_smarty_tpl)
 </style>
 </head>
 <body>
-  <strong><p id="frase1" style="margin-left: 520px; width: 380px" class="maquina-escribir" style="width:650px; margin-left:450px">Centro Educativo</p></strong>
+  <strong><p id="frase1" style="margin-left: 520px; width: 480px" class="maquina-escribir">Centro Educativo</p></strong>
   <div class="container">
     <form method="post" action="index.php">
       <input type="hidden" name="accion" value="validar_login">

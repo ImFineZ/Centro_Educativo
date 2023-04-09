@@ -4,8 +4,7 @@ require_once "libs/config_smarty.php";
 require_once "model/model.php";
 require_once "model/model_usuario.php";
 
-class ControlException extends Exception
-{
+class ControlException extends Exception {
 }
 
 class Control
@@ -33,9 +32,15 @@ class Control
       $this->obj_smarty->setDisplay("pantallaPrincipal.tpl");
     }
 
-    public function gestor_solicitudes()
-    {
+    public function displayAdministrarAlumnos(){
+      $this->obj_smarty->setDisplay("administrarAlumnos.tpl");
+    }
 
+      public function displayAdministrarPadres(){
+        $this->obj_smarty->setDisplay("administrarPadres.tpl");
+      }
+
+    public function gestor_solicitudes() {
         $this->validar_inactividad();
 
         try {
@@ -48,7 +53,19 @@ class Control
                     case 'salir':
                         $this->ctl_salir();
                         break;
-                }
+                    case 'admAlumnos':
+                        $this->displayHeaderAdmin();
+                        $this->ctl_listar_usuarios();
+                        break;
+                    case 'admPadres':
+                        $this->displayHeaderAdmin();
+                        $this->ctl_listar_padres();
+                        break;
+                    case 'volver':
+                        $this->displayHeaderAdmin();
+                        $this->displayPantallaPrincipal();
+                        break;
+                  }
             } else {
                 if (isset($_SESSION['USUARIO'])) {
 
@@ -75,8 +92,27 @@ class Control
       $this->obj_smarty->setDisplay("frm_login.tpl");
     }
 
-    public function ctl_validar_login()
-    {
+    public function ctl_administrarPadres(){
+      $this->displayHeaderAdmin();
+      $this->displayAdministrarPadres();
+    }
+
+    public function ctl_listar_usuarios() {
+        $rs = $this->objModel->m_listar_usuarios();
+
+        $us = unserialize($_SESSION['USUARIO']);
+        $this->obj_smarty->setAssign("lista_usuarios",$rs);
+        $this->obj_smarty->setDisplay("administrarAlumnos.tpl");
+    }
+
+    public function ctl_listar_padres(){
+      $ra = $this->objModel->m_listar_padres();
+
+      $this->obj_smarty->setAssign("lista_padres",$ra);
+      $this->obj_smarty->setDisplay("administrarPadres.tpl");
+    }
+
+    public function ctl_validar_login() {
         $obj_u = new model_usuario();
         $obj_u->set_useremail($_REQUEST['txt_usuario']);
         $obj_u->set_pass($_REQUEST['pwd_password']);
@@ -94,8 +130,7 @@ class Control
         }
     }
 
-    public function validar_inactividad()
-    {
+    public function validar_inactividad() {
         //Comprobamos si esta definida la sesión 'tiempo'.
         if (isset($_SESSION['tiempo'])) {
             //Tiempo en segundos para dar vida a la sesión.

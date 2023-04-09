@@ -12,6 +12,7 @@
 </style>
 </head>
 <body>
+  <strong><p id="frasePantPrin" style="margin-left: 290px; width: 780px" class="maquina-escribir">Centro Educativo-Perfil: Administrador</p></strong>
   <strong><input class="btnModReg" type="submit" id="btnReg" onclick="" name="" value="Crear Usuario"></strong>
   <section class="modalReg">
     <div class="modal_container">
@@ -30,7 +31,7 @@
         <strong><label id="lb_reg" for="perfilTxt">Perfil:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
         <input style="font-family: Century-Gothic" type="text" id="txt_reg" list="perfiles">
         <datalist id="perfiles">
-          <option value="Docente">
+          <option value="Docente/Admin">
           <option value="Estudiante">
           <option value="Padre">
         </datalist>

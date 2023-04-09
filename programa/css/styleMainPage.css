@@ -14,6 +14,15 @@ body{
   color: #3374A0;
 }
 
+#frasePantPrin{
+  text-align: left;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 40px;
+  margin-top: 200px;
+  margin-left: 300px;
+  color: #3374A0;
+}
+
 /*CONTACT PAGE STYLES*/
 input[type=text], select, textarea {
   width: 100%;
@@ -92,10 +101,10 @@ input[type=submit]:hover {
 #btnReg{
   text-align: center;
   font-family: 'Work Sans', sans-serif;
-  margin-top: 80px;
-  margin-left:177px;
+  margin-top: 100px;
+  margin-left:477px;
   height: 56px;
-  width: 150px;
+  width: 350px;
   background-color: black;
   color: white;
   border-style: solid;
@@ -133,6 +142,22 @@ input[type=submit]:hover {
   border-style: solid;
   border-color: black;
   border-width: 1px;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  background-color: #101728;
+  opacity: 90%;
+}
+
+.buscadorAlumno{
+  margin: auto;
+  width: 75%;
+  margin-top: 150px;
+  max-width: 550px;
+  max-height: 85%;
+  font-family: 'Work Sans';
+  color: white;
   display: grid;
   gap: 1em;
   place-items: center;
@@ -183,16 +208,16 @@ li{
 li a{
   display: block;
   color: white;
-  font-family: 'Tourney';
+  font-family: 'Work Sans', sans-serif;
   text-align: center;
-  padding: 30px 150px;
+  padding: 30px 100px;
   text-decoration: none;
   font-size: 20px;
 }
 
 li a:hover{
   background-color: black;
-  font-family: 'Tourney';
+  font-family: 'Work Sans', sans-serif;
   font-weight: bolder;
   font-size: 16px;
   color: white;
@@ -204,4 +229,49 @@ li a:hover{
 
 .active{
   position:fixed;
+}
+
+#lb_busAlm{
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+#btnBuscarAlm{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: -140px;
+  margin-bottom: 40px;
+  margin-left: -30px;
+  height: 56px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.3px;
+}
+
+.table{
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  width: 80%;
+  margin-top: 50px;
+  background: #3A3B41 url("gradient.gif") bottom left repeat-x;
+  margin-left: 125px;
+  opacity: 70%;
+}
+th, td {
+   text-align: center;
+   vertical-align: top;
+   border-spacing: 0;
+   border-collapse: collapse;
+}
+
+#fraseAdmAlm{
+  text-align: left;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 40px;
+  margin-top: 120px;
+  margin-left: 300px;
+  color: #3374A0;
 }

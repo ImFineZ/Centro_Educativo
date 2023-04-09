@@ -4,8 +4,7 @@ require_once "libs/config_smarty.php";
 require_once "model/model.php";
 require_once "model/model_usuario.php";
 
-class ControlException extends Exception
-{
+class ControlException extends Exception {
 }
 
 class Control
@@ -33,6 +32,14 @@ class Control
       $this->obj_smarty->setDisplay("pantallaPrincipal.tpl");
     }
 
+    public function displayAdministrarAlumnos(){
+      $this->obj_smarty->setDisplay("administrarAlumnos.tpl");
+    }
+
+      public function displayAdministrarPadres(){
+        $this->obj_smarty->setDisplay("administrarPadres.tpl");
+      }
+
     public function gestor_solicitudes()
     {
 
@@ -48,7 +55,14 @@ class Control
                     case 'salir':
                         $this->ctl_salir();
                         break;
-                }
+                    case 'admAlumnos':
+                        $this->ctl_administrarAlumno();
+                        break;
+                    case 'admPadre':
+                        $this->ctl_administrarPadres();
+                        break;
+
+                  }
             } else {
                 if (isset($_SESSION['USUARIO'])) {
 
@@ -73,6 +87,16 @@ class Control
 
     public function ctl_salir() {
       $this->obj_smarty->setDisplay("frm_login.tpl");
+    }
+
+    public function ctl_administrarAlumno(){
+      $this->displayHeaderAdmin();
+      $this->displayAdministrarAlumnos();
+    }
+
+    public function ctl_administrarPadres(){
+      $this->displayHeaderAdmin();
+      $this->displayAdministrarPadres();
     }
 
     public function ctl_validar_login()

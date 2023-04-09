@@ -11,3 +11,7 @@ modalCerrar.addEventListener('click', (e)=>{
   e.preventDefault();
   modalReg.classList.remove('modalReg--show')
 });
+
+function fn_abrir_edicion(id_usuario){
+  
+}

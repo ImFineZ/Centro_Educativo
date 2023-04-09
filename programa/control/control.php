@@ -58,7 +58,8 @@ class Control
                         $this->ctl_listar_usuarios();
                         break;
                     case 'admPadres':
-                        $this->ctl_administrarPadres();
+                        $this->displayHeaderAdmin();
+                        $this->ctl_listar_padres();
                         break;
                     case 'volver':
                         $this->displayHeaderAdmin();
@@ -102,6 +103,13 @@ class Control
         $us = unserialize($_SESSION['USUARIO']);
         $this->obj_smarty->setAssign("lista_usuarios",$rs);
         $this->obj_smarty->setDisplay("administrarAlumnos.tpl");
+    }
+
+    public function ctl_listar_padres(){
+      $ra = $this->objModel->m_listar_padres();
+
+      $this->obj_smarty->setAssign("lista_padres",$ra);
+      $this->obj_smarty->setDisplay("administrarPadres.tpl");
     }
 
     public function ctl_validar_login() {

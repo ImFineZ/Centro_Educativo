@@ -58,6 +58,24 @@ class model
       }
       return $matUsuarios;
     }
+
+    public function m_listar_padres(){
+      $sql = "SELECT * FROM padres";
+      $rs = $this->ins_conexion->ejecutar($sql);
+
+      $matrizUsuarios = array();
+      while($row = mysqli_fetch_assoc($rs)){
+        $arrUsuarios = array();
+        $arrUsu['id_padre'] = $row['id_padre'];
+        $arrUsu['nombre']   = $row['nombre'];
+        $arrUsu['apellido']   = $row['apellido'];
+        $arrUsu['email']   = $row['email'];
+        $arrUsu['acciones'] = "<img src='img/edit.png' onclick='fn_abrir_edicion(".$row['id_padre'].");'><img src='img/delete.png' onclick='fn_borrar_usuario(".$row['id_usuario'].");'>";
+
+        $matUsuarios[] = $arrUsu;
+      }
+      return $matUsuarios;
+    }
 }
 
 ?>

@@ -21,20 +21,18 @@
           <th scope="col" style="width:15%">Nombre</th>
           <th scope="col" style="width:15%">Apellido</th>
           <th scope="col" style="width:15%">Correo</th>
-          <th scope="col" style="width:15%">Perfil</th>
-          <th scope="col" style="width:15%">Estado</th>
           <th scope="col" style="width:15%">Acciones</th>
         </tr>
       </thead>
       <tbody>
 
-      <!--  {foreach name=outer item=contact from=$lista_usuarios}
+      {foreach name=outer item=contact from=$lista_padres}
           <tr>
           {foreach key=key item=item from=$contact}
               <td>{$item}</td>
           {/foreach}
         </tr>
-        {/foreach} -->
+        {/foreach}
 
 
 

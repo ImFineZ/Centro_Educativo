@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-09 04:05:24
+/* Smarty version 4.3.0, created on 2023-04-09 06:12:10
   from 'C:\xampp\htdocs\Centro_Educativo\programa\view\templates\administrarAlumnos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64321d649d49e1_94887428',
+  'unifunc' => 'content_64323b1ad65c16_78890635',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0591bbd7c9314d6286f68594c8ddd1865d56cc62' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Centro_Educativo\\programa\\view\\templates\\administrarAlumnos.tpl',
-      1 => 1681005923,
+      1 => 1681013521,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64321d649d49e1_94887428 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64323b1ad65c16_78890635 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -43,7 +43,7 @@ function content_64321d649d49e1_94887428 (Smarty_Internal_Template $_smarty_tpl)
   </div>
 
   <div>
-    <table class="table">
+    <table class="table" id="tablaAlumnos">
       <thead>
         <tr>
           <th scope="col" style="width:5%">Id</th>

@@ -13,6 +13,7 @@
 </head>
 <body>
   <ul class="active">
+    <li><a class="nav-link" href="index.php?accion=volver">Volver</a></li>
     <li><a class="nav-link" href="index.php?accion=admAlumnos">Administrar Alumnos</a></li>
     <li><a class="nav-link" href="index.php?accion=admPadre">Administrar Padres</a></li>
     <li><a class="nav-link" href="index.php?accion=salir" tabindex="-1">Salir</a></li>

@@ -12,6 +12,7 @@
 </style>
 </head>
 <body>
+  <strong><p id="frasePantPrin" style="margin-left: 290px; width: 780px" class="maquina-escribir">Centro Educativo-Perfil: Administrador</p></strong>
   <strong><input class="btnModReg" type="submit" id="btnReg" onclick="" name="" value="Crear Usuario"></strong>
   <section class="modalReg">
     <div class="modal_container">

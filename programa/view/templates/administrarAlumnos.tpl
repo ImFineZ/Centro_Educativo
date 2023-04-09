@@ -20,7 +20,7 @@
   </div>
 
   <div>
-    <table class="table">
+    <table class="table" id="tablaAlumnos">
       <thead>
         <tr>
           <th scope="col" style="width:5%">Id</th>

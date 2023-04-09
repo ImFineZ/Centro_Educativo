@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-09 02:25:57
+/* Smarty version 4.3.0, created on 2023-04-09 06:14:36
   from 'C:\xampp\htdocs\Centro_Educativo\programa\view\templates\headerAdmin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64320615764245_51194854',
+  'unifunc' => 'content_64323bacb48b75_04453347',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '090da03bc4ef3f356262b139f2d448a14722fba6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Centro_Educativo\\programa\\view\\templates\\headerAdmin.tpl',
-      1 => 1680999759,
+      1 => 1681013607,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64320615764245_51194854 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64323bacb48b75_04453347 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +36,7 @@ function content_64320615764245_51194854 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 <body>
   <ul class="active">
+    <li><a class="nav-link" href="index.php?accion=volver">Volver</a></li>
     <li><a class="nav-link" href="index.php?accion=admAlumnos">Administrar Alumnos</a></li>
     <li><a class="nav-link" href="index.php?accion=admPadre">Administrar Padres</a></li>
     <li><a class="nav-link" href="index.php?accion=salir" tabindex="-1">Salir</a></li>

@@ -14,9 +14,37 @@
 <body>
   <div class="buscadorAlumno">
   <input type="hidden"  name="accion" value="buscar_Padre">
-  <strong><label id="lb_busAlm" for="busAlmTxt">Ingres correo del Padre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
+  <strong><label id="lb_busAlm" for="busAlmTxt">Ingrese correo del Padre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
   <input style="font-family: Century-Gothic" type="text" id="txt_busPad" name="txtbusPad" placeholder=""><br>
   <strong><input type="submit" id="btnBuscarAlm" onclick="" name="" value="Buscar"></strong>
+  </div>
+  <div>
+    <table class="table" id="tablaAlumnos">
+      <thead>
+        <tr>
+          <th scope="col" style="width:5%">Id</th>
+          <th scope="col" style="width:15%">Nombre</th>
+          <th scope="col" style="width:15%">Apellido</th>
+          <th scope="col" style="width:15%">Correo</th>
+          <th scope="col" style="width:15%">Perfil</th>
+          <th scope="col" style="width:15%">Estado</th>
+          <th scope="col" style="width:15%">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      <!--  {foreach name=outer item=contact from=$lista_usuarios}
+          <tr>
+          {foreach key=key item=item from=$contact}
+              <td>{$item}</td>
+          {/foreach}
+        </tr>
+        {/foreach} -->
+
+
+
+      </tbody>
+    </table>
   </div>
 <script src="js/jsMainPage.js"></script>
 </body>

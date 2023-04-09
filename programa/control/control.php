@@ -61,6 +61,10 @@ class Control
                     case 'admPadre':
                         $this->ctl_administrarPadres();
                         break;
+                    case 'volver':
+                        $this->displayHeaderAdmin();
+                        $this->displayPantallaPrincipal();
+                        break;
 
                   }
             } else {

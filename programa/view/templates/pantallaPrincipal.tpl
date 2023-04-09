@@ -31,7 +31,7 @@
         <strong><label id="lb_reg" for="perfilTxt">Perfil:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
         <input style="font-family: Century-Gothic" type="text" id="txt_reg" list="perfiles">
         <datalist id="perfiles">
-          <option value="Docente">
+          <option value="Docente/Admin">
           <option value="Estudiante">
           <option value="Padre">
         </datalist>

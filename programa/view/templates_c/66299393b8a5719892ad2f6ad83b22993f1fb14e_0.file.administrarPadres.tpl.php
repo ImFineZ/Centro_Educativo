@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-09 06:27:39
+/* Smarty version 4.3.0, created on 2023-04-09 09:07:58
   from 'C:\xampp\htdocs\Centro_Educativo\programa\view\templates\administrarPadres.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64323ebba22d53_12640747',
+  'unifunc' => 'content_6432644e48d204_72668436',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '66299393b8a5719892ad2f6ad83b22993f1fb14e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Centro_Educativo\\programa\\view\\templates\\administrarPadres.tpl',
-      1 => 1681013527,
+      1 => 1681024043,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64323ebba22d53_12640747 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6432644e48d204_72668436 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -35,12 +35,7 @@ function content_64323ebba22d53_12640747 (Smarty_Internal_Template $_smarty_tpl)
 </style>
 </head>
 <body>
-  <div class="buscadorAlumno">
-  <input type="hidden"  name="accion" value="buscar_Padre">
-  <strong><label id="lb_busAlm" for="busAlmTxt">Ingrese correo del Padre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
-  <input style="font-family: Century-Gothic" type="text" id="txt_busPad" name="txtbusPad" placeholder=""><br>
-  <strong><input type="submit" id="btnBuscarAlm" onclick="" name="" value="Buscar"></strong>
-  </div>
+  <strong><p id="fraseAdmAlm" style="margin-left: 290px; width: 780px" class="maquina-escribir">Centro Educativo-Administrar Padres</p></strong>
   <div>
     <table class="table" id="tablaAlumnos">
       <thead>

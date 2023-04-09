@@ -14,7 +14,7 @@
 <body>
   <div class="buscadorAlumno">
   <input type="hidden"  name="accion" value="buscar_Padre">
-  <strong><label id="lb_busAlm" for="busAlmTxt">Ingrese correo del Padre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
+  <strong><label id="lb_busAlm" for="busAlmTxt">Ingres correo del Padre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
   <input style="font-family: Century-Gothic" type="text" id="txt_busPad" name="txtbusPad" placeholder=""><br>
   <strong><input type="submit" id="btnBuscarAlm" onclick="" name="" value="Buscar"></strong>
   </div>

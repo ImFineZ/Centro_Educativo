@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-09 02:26:41
+/* Smarty version 4.3.0, created on 2023-04-09 04:05:24
   from 'C:\xampp\htdocs\Centro_Educativo\programa\view\templates\administrarAlumnos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64320641eccf55_64975286',
+  'unifunc' => 'content_64321d649d49e1_94887428',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0591bbd7c9314d6286f68594c8ddd1865d56cc62' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Centro_Educativo\\programa\\view\\templates\\administrarAlumnos.tpl',
-      1 => 1680999678,
+      1 => 1681005923,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64320641eccf55_64975286 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64321d649d49e1_94887428 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -40,6 +40,51 @@ function content_64320641eccf55_64975286 (Smarty_Internal_Template $_smarty_tpl)
   <strong><label id="lb_busAlm" for="busAlmTxt">Ingrese correo de Alumno:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
   <input style="font-family: Century-Gothic" type="text" id="txt_busAlum" name="txtbusAlum" placeholder=""><br>
   <strong><input type="submit" id="btnBuscarAlm" onclick="" name="" value="Buscar"></strong>
+  </div>
+
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" style="width:5%">Id</th>
+          <th scope="col" style="width:15%">Nombre</th>
+          <th scope="col" style="width:15%">Apellido</th>
+          <th scope="col" style="width:15%">Correo</th>
+          <th scope="col" style="width:15%">Perfil</th>
+          <th scope="col" style="width:15%">Estado</th>
+          <th scope="col" style="width:15%">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      <!--  <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['lista_usuarios']->value, 'contact', false, NULL, 'outer', array (
+));
+$_smarty_tpl->tpl_vars['contact']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['contact']->value) {
+$_smarty_tpl->tpl_vars['contact']->do_else = false;
+?>
+          <tr>
+          <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['contact']->value, 'item', false, 'key');
+$_smarty_tpl->tpl_vars['item']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->do_else = false;
+?>
+              <td><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
+</td>
+          <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+        </tr>
+        <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?> -->
+
+
+
+      </tbody>
+    </table>
   </div>
 <?php echo '<script'; ?>
  src="js/jsMainPage.js"><?php echo '</script'; ?>

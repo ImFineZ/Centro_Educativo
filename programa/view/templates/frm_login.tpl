@@ -12,7 +12,7 @@
 </style>
 </head>
 <body>
-  <strong><p id="frase1" style="margin-left: 520px; width: 380px" class="maquina-escribir" style="width:650px; margin-left:450px">Centro Educativo</p></strong>
+  <strong><p id="frase1" style="margin-left: 520px; width: 480px" class="maquina-escribir">Centro Educativo</p></strong>
   <div class="container">
     <form method="post" action="index.php">
       <input type="hidden" name="accion" value="validar_login">

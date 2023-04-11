@@ -29,7 +29,7 @@
         <input style="font-family: Century-Gothic" type="email" id="txt_reg" name="email" placeholder="" style="height:300px">
         <br>
         <strong><label id="lb_reg" for="perfilTxt">Perfil:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
-        <input style="font-family: Century-Gothic" type="text" id="txt_reg" list="perfiles">
+        <input style="font-family: Century-Gothic" type="text" name="perfiles" id="txt_reg" list="perfiles">
         <datalist id="perfiles">
           <option value="Docente/Admin">
           <option value="Estudiante">
@@ -37,7 +37,7 @@
         </datalist>
         <br>
         <strong><label id="lb_reg" for="estadoTxt">Estado:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
-        <input style="font-family: Century-Gothic" type="text" id="txt_reg" list="estado">
+        <input style="font-family: Century-Gothic" name="estados" type="text" id="txt_reg" list="estado">
         <datalist id="estado">
           <option value="Activo">
           <option value="Inactivo">

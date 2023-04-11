@@ -1,14 +1,13 @@
 <?php
-class model_usuario
+class model_alumno
 {
 
     private $id_usuario;
     private $nombre;
     private $apellido;
     private $email;
-    private $pass;
+    private $id_padre;
     private $tipo_usuario;
-    private $estado;
 
     public function __construct()
     {
@@ -48,14 +47,7 @@ class model_usuario
     {
         $this->email = $n;
     }
-    public function get_pass()
-    {
-        return $this->pass;
-    }
-    public function set_pass($n)
-    {
-        $this->pass = $n;
-    }
+
     public function get_tipo_usuario()
     {
         return $this->tipo_usuario;
@@ -64,13 +56,5 @@ class model_usuario
     {
         $this->tipo_usuario = $n;
     }
-    public function get_estado()
-    {
-        return $this->estado;
-    }
-    public function set_estado($n)
-    {
-        $this->estado = $n;
-    }
 }
-?>
+ ?>

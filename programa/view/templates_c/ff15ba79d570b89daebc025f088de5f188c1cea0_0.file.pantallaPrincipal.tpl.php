@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-04-09 09:42:10
+/* Smarty version 4.3.0, created on 2023-04-11 02:20:20
   from 'C:\xampp\htdocs\Centro_Educativo\programa\view\templates\pantallaPrincipal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64326c521e6e56_43180297',
+  'unifunc' => 'content_6434a7c40735f0_98977934',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff15ba79d570b89daebc025f088de5f188c1cea0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Centro_Educativo\\programa\\view\\templates\\pantallaPrincipal.tpl',
-      1 => 1681026126,
+      1 => 1681171298,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64326c521e6e56_43180297 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6434a7c40735f0_98977934 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +52,7 @@ function content_64326c521e6e56_43180297 (Smarty_Internal_Template $_smarty_tpl)
         <input style="font-family: Century-Gothic" type="email" id="txt_reg" name="email" placeholder="" style="height:300px">
         <br>
         <strong><label id="lb_reg" for="perfilTxt">Perfil:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
-        <input style="font-family: Century-Gothic" type="text" id="txt_reg" list="perfiles">
+        <input style="font-family: Century-Gothic" type="text" name="perfiles" id="txt_reg" list="perfiles">
         <datalist id="perfiles">
           <option value="Docente/Admin">
           <option value="Estudiante">
@@ -60,7 +60,7 @@ function content_64326c521e6e56_43180297 (Smarty_Internal_Template $_smarty_tpl)
         </datalist>
         <br>
         <strong><label id="lb_reg" for="estadoTxt">Estado:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></strong>
-        <input style="font-family: Century-Gothic" type="text" id="txt_reg" list="estado">
+        <input style="font-family: Century-Gothic" name="estados" type="text" id="txt_reg" list="estado">
         <datalist id="estado">
           <option value="Activo">
           <option value="Inactivo">

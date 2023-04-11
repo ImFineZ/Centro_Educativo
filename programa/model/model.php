@@ -101,7 +101,7 @@ class model
         $arrUsu['email']   = $row['email'];
         $arrUsu['id_padre']   = $row['id_padre'];
         $arrUsu['tipo_usuario']   = $row['tipo_usuario'];
-        $arrUsu['acciones'] = "<img src='img/edit.png' onclick='fn_abrir_edicion(".$row['id_alumno'].");'><img src='img/delete.png' onclick='fn_borrar_usuario(".$row['id_usuario'].");'>";
+        $arrUsu['acciones'] = "<img src='img/edit.png' onclick='fn_abrir_edicion(".$row['id_alumno'].");'><img src='img/delete.png' onclick='fn_borrar_usuario(".$row['id_alumno'].");'>";
 
         $matUsuarios[] = $arrUsu;
       }
@@ -119,7 +119,7 @@ class model
         $arrUsu['nombre']   = $row['nombre'];
         $arrUsu['apellido']   = $row['apellido'];
         $arrUsu['email']   = $row['email'];
-        $arrUsu['acciones'] = "<img src='img/edit.png' onclick='fn_abrir_edicion(".$row['id_padre'].");'><img src='img/delete.png' onclick='fn_borrar_usuario(".$row['id_usuario'].");'>";
+        $arrUsu['acciones'] = "<img src='img/edit.png' onclick='fn_abrir_edicion(".$row['id_padre'].");'><img src='img/delete.png' onclick='fn_borrar_usuario(".$row['id_padre'].");'>";
 
         $matUsuarios[] = $arrUsu;
       }
